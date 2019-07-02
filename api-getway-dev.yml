@@ -16,5 +16,10 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'    
+        include: '*' 
+spring:
+ rabbitmq:
+    username: guest
+    password: guest
+    host: 192.168.99.100 
     
