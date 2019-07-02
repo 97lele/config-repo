@@ -4,19 +4,19 @@ spring:
     password: guest
     host: 192.168.99.100
 zuul:
-  routes:
-#   product: /myProduct/**
-#   config: /myConfig/**
   ignored-patterns:
-    - /**/order/env
-  myOrder:
+    - /**/order/env  
+  routes:
+   myOrder:
     path: /myOrder/**
     serviceId: order
     sensitiveHeaders:
-  myConfig:
+   myConfig:
     path: /myConfig/**
     serviceId: config
     sensitiveHeaders:
+#   product: /myProduct/**
+#   config: /myConfig/**  
 management:
   endpoints:
     web:
