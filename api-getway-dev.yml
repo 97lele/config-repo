@@ -1,3 +1,8 @@
+spring:
+   rabbitmq:
+    username: guest
+    password: guest
+    host: 192.168.99.100
 zuul:
   routes:
 #   product: /myProduct/**
@@ -16,10 +21,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*' 
-spring:
- rabbitmq:
-    username: guest
-    password: guest
-    host: 192.168.99.100 
+        include: '*'    
     
