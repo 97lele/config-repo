@@ -8,12 +8,12 @@ zuul:
 #   product: /myProduct/**
 #   config: /myConfig/**
   ignored-patterns:
-   -/**/order/env
-   myOrder:
+    - /**/order/env
+  myOrder:
     path: /myOrder/**
     serviceId: order
     sensitiveHeaders:
-   myConfig:
+  myConfig:
     path: /myConfig/**
     serviceId: config
     sensitiveHeaders:
