@@ -1,0 +1,20 @@
+zuul:
+  routes:
+#   product: /myProduct/**
+#   config: /myConfig/**
+  ignored-patterns:
+   - /**/order/env
+   myOrder:
+    path: /myOrder/**
+    serviceId: order
+    sensitiveHeaders:
+   myConfig:
+    path: /myConfig/**
+    serviceId: config
+    sensitiveHeaders:
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'    
+    
