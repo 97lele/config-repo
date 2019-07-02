@@ -10,6 +10,9 @@ spring:
     username: guest
     password: guest
     host: 192.168.99.100 
+   redis:
+    host: localhost
+    port: 6379  
 ribbon:
   ReadTimeout: 60000
   ConnectTimeout: 60000
