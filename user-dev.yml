@@ -1,0 +1,19 @@
+spring:
+   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1/springcloud_sell?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+   rabbitmq:
+    username: guest
+    password: guest
+    host: 192.168.99.100 
+   jpa:
+    show-sql: true
+   redis:
+    host: localhost
+    port: 6379  
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
