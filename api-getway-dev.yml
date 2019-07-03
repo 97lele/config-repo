@@ -7,7 +7,7 @@ spring:
     port: 6379
     host: localhost   
 zuul:
-  sensitiveHeaders:
+  sensitive-headers:
   ignored-patterns:
     - /**/order/env  
 #  routes:
