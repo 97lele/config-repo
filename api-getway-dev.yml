@@ -3,17 +3,20 @@ spring:
     username: guest
     password: guest
     host: 192.168.99.100
+   redis:
+    port: 6379
+    host: localhost   
 zuul:
   sensitiveHeaders:
   ignored-patterns:
     - /**/order/env  
-  routes:
-   myOrder:
-    path: /myOrder/**
-    serviceId: order
-   myConfig:
-    path: /myConfig/**
-    serviceId: config
+#  routes:
+#   myOrder:
+#    path: /myOrder/**
+#    serviceId: order
+#   myConfig:
+#    path: /myConfig/**
+#   serviceId: config
 #   sensitiveHeaders:
 #   product: /myProduct/**
 #   config: /myConfig/**  
